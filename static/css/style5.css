@@ -1,0 +1,270 @@
+
+/*******************
+/* GLOBAL
+*******************/
+main .container {
+  margin-bottom: 50px;
+}
+
+main a:hover, main a:focus,
+#supernav-wrapper a:hover,
+#supernav-wrapper a:focus,
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*******************
+/* HEADER
+*******************/
+header img {
+  max-width: 300px;
+  max-height: 69px;
+  width: auto;
+  height: auto;
+}
+
+header img.mit-logo {
+  max-width: 150px;
+}
+
+@media (min-width: 992px) {
+  header img.mit-logo {
+    float: right;
+  }
+}
+
+/*******************
+/* SUPERNAV MENU
+*******************/
+#menu-supernav li {
+  margin: 0;
+}
+
+#menu-supernav a {
+  padding: .5rem 0 .5rem 1rem;
+  font-size: .85rem;
+}
+
+/*******************
+/* MAIN NAV
+*******************/
+#main-nav a {
+  padding: .75rem 1.5rem .75rem 0;
+}
+
+#main-nav .dropdown-menu a {
+  padding: .5rem 1rem;
+}
+
+#main-nav .dropdown-menu > li {
+  width: 100%;
+}
+
+#main-nav .dropdown-item:focus,
+#main-nav .dropdown-item:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+
+@media (min-width: 979px) {
+  #main-nav ul#menu-main-nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+#main-nav .dropdown-menu {
+  margin-top: 0;
+  border-radius: 0;
+}
+
+#main-nav .dropdown-menu a {
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+#main-nav .dropdown-menu a:hover {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+.navbar-toggler:focus, .navbar-toggler:hover {
+  text-decoration: none;
+  background: transparent;
+  border-color: transparent;
+}
+
+/*******************
+/* BREADCRUMBS
+*******************/
+#breadcrumb-wrapper .breadcrumb {
+  background: transparent;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "»";
+}
+
+/*******************
+/* SIDEBAR
+*******************/
+.widget {
+  margin-bottom: 30px;
+}
+
+.widget.wysiwyg-widget {
+  padding: 30px;
+}
+
+#sidebar-menu {
+  font-size: 14px;
+}
+
+#sidebar-menu ul,
+#sidebar-menu li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar-menu li a {
+  padding: 4px 0;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar-menu li.cmw-level-1 {
+  border-top: 2px solid #000;
+  padding: 4px 0;
+}
+
+#sidebar-menu li.cmw-level-1 > a {
+  font-weight: 600;
+}
+
+#sidebar-menu li.current-menu-item > a, #sidebar-menu li.cmw-current-item > a {
+  font-weight: bold;
+}
+
+#sidebar-menu .sub-menu {
+  padding-left: 30px;
+  font-style: italic;
+}
+
+#sidebar-menu .sub-menu a {
+  padding-top: 0;
+}
+
+#sidebar-menu .sub-menu li.current-menu-item > a, #sidebar-menu .sub-menu li.cmw-current-item > a {
+  font-style: initial;
+}
+
+/*******************
+/* POSTS
+*******************/
+.meta-data {
+  font-size: .85rem;
+}
+
+#results-container .meta-data {
+  margin-bottom: 0;
+}
+
+form[data-sf-form-id] {
+  background: #e8e8e8;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  form[data-sf-form-id] > ul {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  form[data-sf-form-id] > ul > li {
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  form[data-sf-form-id] > ul > li label,
+  form[data-sf-form-id] > ul > li input,
+  form[data-sf-form-id] > ul > li select {
+    width: 100%;
+  }
+}
+
+.navigation.pagination .nav-links {
+  width: 100%;
+  text-align: right;
+}
+
+/*******************
+/* FOOTER
+*******************/
+footer .social-media-links a {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 0 5px;
+  width: 35px;
+  height: 35px;
+  font-size: 25px;
+  line-height: 25px;
+  padding: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+footer .social-media-links a > img {
+  display: block;
+}
+
+footer .social-media-links a > img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+footer .social-media-links a:hover > img {
+  opacity: 0;
+}
+
+footer .social-media-links a:hover > img.hover {
+  opacity: 1;
+}
+
+/*******************
+/* GDPR COOKIE POLICY
+*******************/
+#cookie-policy {
+  position: fixed;
+  top: 0px;
+  background-color: #333;
+  z-index: 1000;
+  display: none;
+}
+
+/*******************
+/* SEARCH POPUP
+*******************/
+button.close {
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+button.close:hover {
+  background: transparent;
+  border-color: transparent;
+}

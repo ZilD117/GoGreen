@@ -1,0 +1,13 @@
+
+
+.photo-bg.photo-1 {
+  background: url(../image/background1.jpg) top center no-repeat;
+  background-size: cover;
+  height: calc(98vh - 63px);
+}
+
+.photo-bg.photo-2 {
+  background: url(../image/background2.jpg) top center no-repeat;
+  background-size: cover;
+  height: calc(65vh);
+}
